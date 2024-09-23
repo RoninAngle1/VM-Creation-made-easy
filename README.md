@@ -4,9 +4,11 @@ A simple Vagrant file that help you create multiple VMs easily
 
 # Pre requirements
 
-1- Vagrant installed
+1- Vagrant installed on host
 
-2- this list of plugins be installed
+2- Virtualbox installed on host
+
+3- this list of plugins be installed
 
 ```
 1- hoe-highline
