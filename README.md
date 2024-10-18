@@ -81,8 +81,11 @@ The sulotion is to change ```out = (indentation+statement).encode(Encoding.defau
 change it to be like:
 ```
 vim /home/alireza/.vagrant.d/gems/3.2.5/gems/highline-1.7.10/lib/highline.rb
-########
+######## The Original Line
 out = (indentation+statement).encode(Encoding.default_external, { :undef => :replace  }
+#######
+####### Change it to this
+out = (indentation + statement).encode(Encoding.default_external, :undef => :replace)
 #######
 ```
 then do run
